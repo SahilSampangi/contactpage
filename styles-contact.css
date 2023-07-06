@@ -1,0 +1,212 @@
+/*This is my SSB Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* ---------- This is the beginning of my SSB Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+
+.center {
+    width: 100%;
+	min-width: 400px;
+	
+    margin: 100px auto;
+ 	background-image:url("https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?w=2000");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	
+}
+
+   
+#logo {
+    width: 40%;
+	
+	border: 3px solid rgb(0, 0, 0);
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-size: 2em;
+    margin: 0px auto 10px auto;
+    color: #000000;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #000000;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Anton', sans-serif;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #000000;
+}
+
+nav {
+font-family: 'Anton', sans-serif;
+font-size: 1.2em;
+width:400px;
+margin:0 auto;
+
+text-align:center;
+margin-top: 2em;
+}
+    nav li{
+		display: inline;
+	}
+	nav a{
+		display: inline-block;
+		padding: 10px;
+	}
+	a{
+		color: #000000;
+		text-decoration: none;
+	}
+a:hover{
+	color:black;
+	background-color: pink;
+}
+@media only screen and (max-width:480px){
+h1{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+h2{
+	font-size: 1em;
+	line-height: 1.5em;
+}}
+button{
+	border-style: groove;
+}
+@mixin clearfix {
+	&:after {
+	display: table;
+	clear: both;
+	}
+	}
+	html {
+	box-sizing: border-box;
+	}
+	*, *:before, *:after {
+	box-sizing: inherit;
+	}
+	
+	body {
+	background-color: steelblue;
+	min-height: 100%;
+	}
+	
+	a {
+	text-decoration: none;
+	color: inherit
+	}
+	
+	.main-header {
+	background-color: #000;
+	padding: 5px 40px 10px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	@media (min-width: 1025px) {
+	.main-header {
+	flex-direction: row;
+	justify-content: space-between;
+	}
+	}
+	
+	.name {
+	color: white;
+	font-size: 1.35em;
+	margin: 0;
+	}
+	a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+	}
+	
+	.main-nav {
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	}
+	a {
+	text-align: center;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+	}

@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            .a{
+	height: 25%;
+	width: 18%;
+}
+
+@mixin clearfix {
+	&:after {
+	display: table;
+	clear: both;
+	}
+	}
+	html {
+	box-sizing: border-box;
+	}
+	*, *:before, *:after {
+	box-sizing: inherit;
+	}
+	
+	body {
+	background-color: steelblue;
+	min-height: 100%;
+	}
+	
+	a {
+	text-decoration: none;
+	color: inherit
+	}
+	
+	.main-header {
+	background-color: #000;
+	padding: 5px 40px 10px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	@media (min-width: 1025px) {
+	.main-header {
+	flex-direction: row;
+	justify-content: space-between;
+	}
+	}
+	
+	.name {
+	color: white;
+	font-size: 1.35em;
+	margin: 0;
+	}
+	a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+	}
+	
+	.main-nav {
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	}
+	a {
+	text-align: center;
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+	}
+        </style>
+    </head>
+    <body>
+        <header class="main-header">
+            <a href="index.html"> <img src="images/ss.jpeg" width="80px"></a>
+            <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="abtme.html">About Me</a></li>
+            <li><a href="favfoods.html">Favorite Foods</a></li>
+
+            </ul>
+            </header>
+        <h1>Sahil's Fav Food/Drinks</h1>
+        <h2>Click on the photos to see my favorite restaurants that serve each item</h2>
+        <div>
+            <a href="https://www.tacobell.com/food/drinks/mountain-dew-baja-blast-freeze" target="_blank"><img  src="images/baja.jpeg" style="width:106%; height:25%;"></a>
+            <a href="https://www.chipotle.com/order/build/burrito-bowl" target="_blank"><img src="images/chip.jpg"style="width:105%; height:30%;"></a>
+             <a href="https://tacobell.com/food/specialties/crunchwrap-supreme" target="_blank"><img  src="images/crunch.jpg"style="width:106%; height:25%;"></a>
+          <a href="https://www.ubatubaacai.com" target="_blank"><img  src="images/uba.jpeg"style="width:106%; height:25%;"></a>
+            <a href="https://www.daveshotchicken.com/menu/" target="_blank"> <img  src="images/dave.webp"style="width:106%; height:25%;"></a>
+                <a href="https://www.kazuyasushimoorpark.com/menu" target="_blank"> <img  src="images/sushi.jpg"style="width:106%; height:25%;"></a>
+                    <a href="http://cabiryani.com/fremont-menu.html" target="_blank"> <img  src="images/pan.jpeg"style="width:106%; height:25%;"></a>
+                        <a href="https://www.in-n-out.com/menu#hamburger" target="_blank"> <img  src="images/in.jpeg"style="width:106%; height:25%;"></a>
+                            <a href="https://www.jamba.com/smoothies/classic/mango-a-go-go" target="_blank"> <img  src="images/go.jpeg"style="width:106%; height:25%;"></a>
+                                <a href="https://nyc-gyro.com/menu/" target="_blank"> <img  src="images/gyro.jpeg"style="width:106%; height:25%;"></a>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>
